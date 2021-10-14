@@ -1,0 +1,125 @@
+.licna-karta {/*3. stiliziramo*/
+    border-radius: 15px;
+    font-family: Calibri, sans-serif;
+    display: grid;
+    width: 490px;
+    height: 300px;
+    padding: 4px 8px;
+    border: 3px solid #000000;
+    grid-template-areas: /*4. dodajemo grid i otvaramo html fajl*/
+    "sg bp rep rep rep"
+    "sg bp lk  lk  lk"
+    "fo fo pre pre cg"
+    "fo fo ime ime cg"
+    "fo fo dr  dr  cg"
+    "fo fo pol reg ss"
+    "fo fo diz diz ss"
+    "fo fo dva dva ss"
+    "di di di  di po";
+    grid-template-columns: 80px 80px 100px 100px 130px;
+    grid-template-rows: 30px 30px 35px 35px 35px 35px 35px 35px 30px;
+}
+
+/*7. dodajemo i stiliziramo grid-area za html elemente*/
+
+.sg {
+   grid-area: sg; 
+   width: 60px;
+   height: 60px;
+   align-self: center;
+   justify-self: center;
+}
+
+.rep {
+    grid-area: rep;
+    align-self: center;
+}
+
+.lk {
+    grid-area: lk;
+    align-self: center;
+}
+
+.fo {
+    grid-area: fo;
+    align-self: center;
+   justify-self: center;
+}
+
+.pre {
+    grid-area: pre;
+    align-self: center;
+}
+
+.ime {
+    grid-area: ime;
+    align-self: center;
+}
+
+.dr {
+    grid-area: dr;
+}
+
+.cg {
+    grid-area: cg;
+    width: 70px;
+    height: 80px;
+    align-self: end;
+    justify-self: center;
+}
+
+.pol {
+    grid-area: pol;
+    align-self: center;
+}
+
+.reg {
+    grid-area: reg;
+    align-self: center;
+}
+
+.diz {
+    grid-area: diz;
+    align-self: center;
+}
+
+.dva {
+    grid-area: dva;
+    align-self: center;
+}
+
+.ss {
+    grid-area: ss;
+    align-self: center;
+    justify-self: center;
+}
+
+.di {
+    grid-area: di;
+    align-self: center;
+}
+
+.po {
+    grid-area: po;
+    align-self: center;
+    justify-self: center;
+    width: 128px;
+    height: 38px;
+}
+
+/*8. stiliziramo i otvaramo html fajl*/
+/* .licna-karta > * {
+    border: 1px dashed #777;
+} */
+
+.velika-slova {/*10. stiliziramo*/
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 47, 255);
+}
+
+.mala.slova {/*11. stiliziramo*/
+    font-size: 11px;
+    font-style: italic;
+    color: #aaa;
+}
